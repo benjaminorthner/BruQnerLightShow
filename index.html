@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embedded Animation</title>
+    <title>Full Page Embed</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
-<body style="margin:0; padding:0; height:100%; overflow:hidden">
-    <iframe style="width:640px;height:480px;border:0px;" src="https://cables.gl/view/662281c7106e898e56dcc841"></iframe>
+<body>
+    <iframe src="https://cables.gl/view/662281c7106e898e56dcc841"></iframe>
 </body>
 </html>
